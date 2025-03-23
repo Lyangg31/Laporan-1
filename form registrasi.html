@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- Declares that this is an HTML5 document-->
+<html lang="id"> <!--Defines the HTML document and specifies that the language is Indonesian-->
+<head> <!--Contains metadata and document information-->
+    <meta charset="UTF-8"> <!--Sets character encoding to UTF-8 to support special characters.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the page is responsive on different devices.-->
+    <title>Registrasi Akun</title> <!--Sets the page title, which appears on the browser tab.-->
+</head>
+<body> <!--The main section of the HTML page where all visible content is placed.-->
+
+    <h1>Registrasi Akun</h1> <!--Displays the main heading "Registrasi Akun" in large text.-->
+    <hr> <!--Creates a horizontal line to separate sections.-->
+ <!-- Registration Form -->
+ <form>
+    <fieldset>
+        <legend>Formulir Registrasi</legend> <!-- Title for the form section -->
+
+        <!-- Table structure for form inputs -->
+        <table border="0" cellspacing="5" cellpadding="5">
+            
+            <!-- Name input field (Read-only) -->
+            <tr>
+                <td><label>Masukkan nama:</label></td>
+                <td><input type="text" value="Nikolaus Lanang Asmoro" readonly></td>
+            </tr>
+
+            <!-- NIM (Student ID) input field (Read-only) -->
+            <tr>
+                <td><label>Masukkan NIM:</label></td>
+                <td><input type="text" value="202332108" readonly></td>
+            </tr>
+
+            <!-- Email input field (Read-only) -->
+            <tr>
+                <td><label>Masukkan email:</label></td>
+                <td><input type="email" value="nikolauslanang9@gmail.com" readonly></td>
+            </tr>
+
+            <!-- Gender selection (Radio buttons) -->
+            <tr>
+                <td><label>Jenis Kelamin:</label></td>
+                <td>
+                    <div class="gender-group"> <!-- Group for gender radio buttons -->
+                        <input type="radio" name="gender" id="laki" checked> 
+                        <label for="laki">Laki-Laki</label> 
+
+                        <input type="radio" name="gender" id="perempuan"> 
+                        <label for="perempuan">Perempuan</label> 
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Religion selection (Dropdown menu) -->
+            <tr>
+                <td><label>Agama:</label></td>
+                <td>
+                    <select>
+                        <option selected>Islam</option>
+                        <option>Kristen</option>
+                        <option>Katolik</option>
+                        <option>Hindu</option>
+                        <option>Buddha</option>
+                        <option>Konghucu</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Password input field -->
+            <tr>
+                <td><label>Masukkan password:</label></td>
+                <td><input type="password" value="admin123"></td>
+            </tr>
+
+            <!-- Confirm password input field -->
+            <tr>
+                <td><label>Konfirmasi password:</label></td>
+                <td><input type="password"></td>
+            </tr>
+
+            <!-- Submit button -->
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Daftar</button>
+                </td>
+            </tr>
+
+        </table>
+    </fieldset>
+</form>
+
+</body>
+</html>
